@@ -10,8 +10,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="register.html">Cadastre-se</a></li>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
                 <li><a href="login.html">Entrar</a></li>
                 <li><a href="subscription.html">Assinatura</a></li>
             </ul>
@@ -26,7 +26,20 @@
             <div class="buttons">
                 <a href="register.html" class="btn">Criar conta</a>
                 <a href="login.html" class="btn">Já tenho conta</a>
-                <a href="genres.html" class="btn">Explorar Gêneros</a> <!-- Botão de gêneros adicionado -->
+            </div>
+        </section>
+
+        <!-- Seção de gêneros integrada -->
+        <section class="genre-section" style="display: none;">
+            <h2>Escolha seu Gênero Favorito</h2>
+            <div class="genre-list">
+                <a href="gêneros/ação.html"><div class="genre-item">Ação</div></a>
+                <a href="gêneros/aventura.html"><div class="genre-item">Aventura</div></a>
+                <a href="gêneros/comedia.html"><div class="genre-item">Comédia</div></a>
+                <a href="gêneros/terror.html"><div class="genre-item">Terror</div></a>
+                <a href="gêneros/drama.html"><div class="genre-item">Drama</div></a>
+                <a href="gêneros/ficção-cientifica.html"><div class="genre-item">Ficção Científica</div></a>
+                <a href="gêneros/romance.html"><div class="genre-item">Romance</div></a>
             </div>
         </section>
     </main>
@@ -34,5 +47,12 @@
     <footer>
         <p>© 2024 Piraflix. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        // Função para mostrar a seção de gêneros após o login
+        function showGenres() {
+            document.querySelector('.genre-section').style.display = 'block';
+        }
+    </script>
 </body>
 </html>

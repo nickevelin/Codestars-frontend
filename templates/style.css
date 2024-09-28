@@ -16,6 +16,36 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.genre-button {
+    background-color: #C10000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.genre-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header .nav-left:hover .genre-dropdown {
+    display: block;
 }
 
 header ul {
@@ -58,13 +88,64 @@ h2 {
     font-size: 36px;
     color: #fff;
     margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a seção de gêneros */
+.genre-section {
+    margin-top: 40px;
+}
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.genre-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.genre-item:hover {
+    background-color: #C10000;
+    transform: scale(1.05);
+}
+
+/* Estilizando a seção de filmes */
+.movie-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.movie {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 10px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 p {
     color: #f0f0f0;
-    font-size: 20px;
-    max-width: 700px;
-    margin: 20px auto;
+    font-size: 16px;
 }
 
 /* Estilizando os botões */
